@@ -9,7 +9,7 @@ for x in range(my_time,0,-1):
     print(f"{hours:02}:{minutes:02}:{seconds:02}")
     # one hour contain 3600 seconds
     time.sleep(1)
-    # If we want to include days also we use hours = int(x/3600) % 24
+    # If we want to include days also we use hours days = int(x/3600) % 24
 
 
 print("Time is over!")

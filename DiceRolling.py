@@ -43,18 +43,18 @@ dice = []
 total = 0
 num_of_dice = int(input("How many times do you want to roll dice: "))
 
-for die in range(num_of_dice):
+for die in num_of_dice:
     dice.append(random.randint(1,6))
 
-# for die in range(num_of_dice):
-#     for line in dice_art.get(dice[die]):
-#         print(line)
+for die in range(num_of_dice):
+    for line in dice_art.get(dice[die]):
+        print(line)
 
-# print dice side by side
-for line in range(5):
-    for die in dice:
-        print(dice_art.get(die)[line], end=" ")
-    print()
+# # print dice side by side
+# for line in range(5):
+#     for die in dice:
+#         print(dice_art.get(die)[line], end=" ")
+#     print()
 
 
 for die in dice:
